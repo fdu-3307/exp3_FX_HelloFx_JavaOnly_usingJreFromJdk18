@@ -1,0 +1,35 @@
+/*@CHARSET "ISO-8859-1";*/
+/* NOTE ilker, above line that is auto created upon creating a CSS file, causes CSS parsing to error and cause CSS to be ignored in JavaFX */
+/* NOTE ilker, the @charset rule is not supported by JavaFX CSS, which is only a subset of full W3C CSS */
+
+/* BEF standard class styles */
+.root {
+	-fx-spacing: 30;
+	-fx-background-color: #BDBDBD;
+	-fx-padding: 10;
+}
+/* NOTE ilker, whatever the Type or variable name of top layout added to scene is the "root node", hence .root style is applied to it. Hence above is correct, not below0 */
+/* .vBox {
+	-fx-spacing: 30;
+	-fx-background-color: blue;
+	-fx-padding: 10;
+} */
+
+.button {
+	-fx-font-family: "Arial";
+	-fx-font-size: 20px;
+	-fx-font-weight: bold;
+	-fx-background-color: linear-gradient(#9EA7E5, #61a2b1);
+	-fx-text-fill: #383640;
+}
+
+.button:hover {
+	-fx-background-color: linear-gradient(#2A5058, #61a2b1);
+	-fx-text-fill: #ffffff;
+}
+
+/* BEF custom specific class styles */
+.my_customLabel {
+	-fx-font-size: 45px;
+	-fx-font-weight: bold;
+}
