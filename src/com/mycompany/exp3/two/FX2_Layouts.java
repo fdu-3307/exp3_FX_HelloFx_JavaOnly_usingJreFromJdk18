@@ -31,6 +31,12 @@ import javafx.stage.Stage;
  *
  */
 public class FX2_Layouts extends Application {
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		launch(args);
+	}
 
 	/* (non-Javadoc)
 	 * @see javafx.application.Application#start(javafx.stage.Stage)
@@ -53,7 +59,10 @@ public class FX2_Layouts extends Application {
 		// button2 - using "java 8 lambda expressions" to handle user events on button
 		Button button2 = new Button();
 		button2.setText("button2");	//("Button java 8 lambda expressions");
-		button2.setOnAction(actionEvent -> System.out.println("button2 event handled via java 8 lambda expressions"));
+		button2.setOnAction(actionEvent -> { 
+			System.out.println("button2 event handled via java 8 lambda expressions");
+			System.out.println( "button1's text is" + button1.getText());
+		});
 
 		// button3
 		Button button3 = new Button();
@@ -68,7 +77,7 @@ public class FX2_Layouts extends Application {
 		// button5
 		Button button5 = new Button();
 		button5.setText("button5");	//("Button java 8 lambda expressions");
-		button5.setOnAction(actionEvent -> System.out.println("button5 event handled via java 8 lambda expressions"));
+		button5.setOnAction(actionEvent -> { System.out.println("button5 event handled via java 8 lambda expressions");});
 		
 		// button6
 		Button button6 = new Button();
@@ -112,13 +121,6 @@ public class FX2_Layouts extends Application {
 		primaryStage.setTitle("Hello World 2");
 		primaryStage.setScene(scene);
 		primaryStage.show();
-	}
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		launch(args);
 	}
 
 }

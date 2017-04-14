@@ -46,7 +46,7 @@ public class FX3_Calculator extends Application {
 		button2divide = new Button("/");
 		label4result = new Label(RESULT_DEFAULT_MESSAGE);
 		label4result.setAlignment(Pos.CENTER);
-		label4result.setStyle("-fx-border-color:#0000; -fx-padding:5px;");
+		label4result.setStyle("-fx-border-color:#0000; -fx-padding:5px;"); // NOTE ilker using CSS elements here
 		button2clear = new Button("Clear");
 		
 		// set widths of all controls
